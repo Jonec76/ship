@@ -1,0 +1,24 @@
+.content{
+    background-color: #F6E6D3;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.direction{
+    position: absolute;
+    visibility: visible;
+    width: 50px;
+    left:-5px;
+    z-index: 0;
+}
+
+.cruise{
+    position: absolute;
+    z-index: 1;
+    height: 90px;
+    bottom: -15px;
+}

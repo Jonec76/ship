@@ -1,0 +1,111 @@
+.nav{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    background-color: #F6E6D3;
+    background-image: url('../images/book.png');
+
+}
+
+.logo{
+    text-align: center;
+    height: 50px;
+    min-height: 7vh;
+    min-width: 100px;
+}
+
+.container1 {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    left:0;
+}
+
+.container2 {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    right:0;
+}
+
+.book{
+    position: absolute;
+    transition: .5s;
+    right:0;
+    width: 50%;
+    height: 100%;
+}
+
+
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.tags:hover{
+    cursor:pointer;
+}
+.container1:hover .story{
+    opacity: 1;
+}
+
+.container1:hover .book{
+    opacity: 1;
+    right:70%;
+    transition: .5s;
+    /* -webkit-transform:rotate(-180deg); */
+    background-image: url("../images/rudder.png") no-repeat;
+}
+
+.rudder{
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    transition: .5s;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.container2:hover .about-me{
+    opacity: 1;
+}
+
+.container2:hover .rudder{
+    opacity: 1;
+    right:50%;
+    transition: .5s;
+    background-image: url("../images/rudder.png") no-repeat;
+}
+
+
+
+.tags{
+    margin: 15px;
+    position: fixed;
+    display: inline-block;
+    right: 60px;
+    width: 250px;
+    min-height: 7vh;
+
+}
